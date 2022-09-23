@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+}
+.container {  display: grid;
+    grid-template-columns: 1.2fr 1.1fr 0.4fr;
+    grid-template-rows: 0.5fr 3.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer";
+  }
+  
+.header {
+      display: flex;
+      grid-area: header;
+      width: 940px;
+      height: 200px;
+      background-image: url(../img/fondo3.jpg);
+      margin: 20px auto;
+      border-radius: 20px;
+      
+  }
+  
+  .marca {
+    width: 700px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  h1 {
+    margin: 0px;
+    font-size: 70px;
+    color: #e9f233;
+    text-align: center;
+    text-shadow: 10px 0px 0px #0f0f0c;
+  }
+  
+  .botonera_principal {
+
+    width: 190px;
+    height: 180px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #83838a;
+  
+  }
+  .botonera_principal ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+  
+   }
+  .botonera_principal ul li a {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #0a0a0a;
+  
+  }
+  .botonera_principal ul li a:hover {
+    background-color: #e6ed5f;
+    color: #6b5fed;
+  }
+  #inicio {
+    height: auto;
+  
+  }
+  #promociones {
+    height: auto;
+  }
+  #nosotros {
+    height: auto;
+  }
+  #contacto {
+     height: auto;
+  }
+  header #inicio #promociones #nosotros #contacto {
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  .aside {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ofertas ofertas ofertas"
+      "paquetes paquetes paquetes"
+      "paquetes paquetes paquetes";
+    grid-area: aside;
+  }
+  
+  .ofertas { grid-area: ofertas; }
+  
+  .paquetes { grid-area: paquetes; }
+  
+  .main {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "section1 section2"
+      "section3 section4"
+      "buscador buscador"
+      "foro coment"
+      "carrousel carrousel";
+    grid-area: main;
+  }
+  
+  .section1 { grid-area: section1; }
+  
+  .section2 { grid-area: section2; }
+  
+  .section3 { grid-area: section3; }
+  
+  .section4 { grid-area: section4; }
+  
+  .foro { grid-area: foro; }
+  
+  .coment { grid-area: coment; }
+  
+  .buscador { grid-area: buscador; }
+  
+  .carrousel { grid-area: carrousel; }
+  
+  .footer {
+    justify-self: stretch;
+    grid-area: footer;
+  }
